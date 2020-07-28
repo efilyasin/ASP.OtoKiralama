@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="Otokiralama.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <!-- Page Wrapper -->
+            <div id="wrapper">
+
+                <!-- Sidebar -->
+                <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+                    <asp:Button ID="Button2" runat="server" Text="Çıkış Yap" OnClick="Button2_Click" CssClass="btn-danger" />
+
+                    <!-- SOL ÜST LOGO VE İSİM -->
+                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="blank.html">
+                        <div class="sidebar-brand-icon rotate-n-15">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <div class="sidebar-brand-text mx-3">Alpha</div>
+                    </a>
+
+                    <!-- Çizgi -->
+                    <hr class="sidebar-divider my-0">
+
+                    <!-- KATEGORİ ADI -->
+                    <div class="sidebar-heading">
+                        İşlemler
+     
+                    </div>
+
+                    <!-- CSS BUTTON
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span>İşlem Ekle</span></a>
+                    </li>-->
+                    <div style="margin-top: 15px;">
+                        <asp:Button ID="Button1" runat="server" Text="Anasayfa" OnClick="Button1_Click" CssClass="btn-info" Width="100%" />
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <asp:Button ID="Button3" runat="server" Text="Araç Kirala" CssClass="btn-info" Width="100%" OnClick="Button3_Click" />
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <asp:Button ID="Button4" runat="server" Text="Araç Kaydı Oluştur" CssClass="btn-info" Width="100%" OnClick="Button4_Click" />
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <asp:Button ID="Button5" runat="server" Text="Müşteri Kaydı Oluştur" CssClass="btn-info" Width="100%" OnClick="Button5_Click" />
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <asp:Button ID="Button6" runat="server" Text="Admin Kaydı Oluştur" CssClass="btn-warning" OnClick="Button6_Click" Width="100%" />
+                    </div>
+
+                </ul>
+                <!-- End of Sidebar -->
+                <!-- Content Wrapper -->
+                <div id="content-wrapper" class="d-flex flex-column">
+
+                    <!-- Main Content -->
+                    <div id="content">
+
+                        <!-- ÜST KISIM -->
+                        <nav class="auto-style1">
+                        </nav>
+
+                        <!-- End of Topbar -->
+
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid">
+
+
+                            <!-- MASTERPAGE -->
+
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+
+                        </div>
+                        <!-- /.container-fluid -->
+
+                    </div>
+                    <!-- End of Main Content -->
+
+                    <!-- Footer -->
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span>Copyright &copy; Your Website 2020</span>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End of Footer -->
+
+                </div>
+                <!-- End of Content Wrapper -->
+
+            </div>
+            <!-- End of Page Wrapper -->
+
+
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Core plugin JavaScript-->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin-2.min.js"></script>
+
+
+        </div>
+    </form>
+</body>
+</html>
